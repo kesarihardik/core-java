@@ -1,0 +1,180 @@
+
+
+
+Is java compiled or interpreted?                                           --in between. Just in time compilation happens.
+
+What is just in time compilation?                                        --java code is converted into bytecode which is platform independent.
+
+What is bytecode?                                                        --intermediate code after compilation.
+                                                                          --platform independent representation of program
+                                                                         --if doesn't depend on any os, hardware etc.
+
+Does java compile to native code like C++?                                --No, it is converted to bytecode which is interpreted by jit compiler inside jvm.
+
+Advantages of JIT compilation.                                            --source code is platform independent.
+                                                                          -- faster than pure interpretation
+                                                                          --caching of byte code happens.
+
+Commands to compile java program                                          --javac Hello.java, java Hello
+
+Is java machine independent or platform independent?                       --Both, same bytecode runs on all machines/ OS in jvm.
+
+
+Difference bw jre, jdk and jvm and their roles.                                 --jdk - for dev, jre - for running, jvm - for execution. jvm lies in jre, jre lies in jdk.
+---------------------------------------------------------
+
+
+
+equals vs == in java                                                              -- equals compares content of object while == compares references
+
+Static, Final, Finally, Finalize?
+
+static - that which doesn't belong to object but is associated with class. can be accessed without object creation.
+final field =   can't be changed
+final method =  can't be overridden
+final class =   not inheritable
+Finally  = used with try and catch as the final step.
+Finalize = method called before gc cleans.
+
+
+When does finally execute in try - catch ?                                     - - always unless there is some system crash or deliberate termination.
+
+
+Entry point of java program ?
+
+this vs super in java                                                                     this - associated with present object, super - superclass
+
+
+throw vs throws                                                                  -- throws is used in method definition to indicate that this method throws exception while throw is used to manually throw exception.
+
+------------------------------
+
+
+
+Types of access modifier : public, private , default
+
+Types of constructors                                                                      -- default, copy, parameterized
+
+Can top level class be private or protected?                                                --  No, since it is useless then. No one can utilize that class.
+
+Why main method is static ?                                                                --so that jvm can call it without creating instance of that class.
+
+Can static methods be overloaded/ overridden?                                   --only overloaded. no overrides since static methods are loaded at runtime and hence no runtime polymorphism
+
+Can top level class be static?                                                         --By design, in java you can't add static to top level class. A non-static class can't exist without a static class. So, top level classes are always static.
+https://stackoverflow.com/questions/7370808/why-cant-a-top-level-class-be-static-in-java#:~:text=Since%20a%20top%2Dlevel%20class,level%20class%20definition%20is%20pointless.
+
+are static variables inherited?                                                             -- Static variables are SHARED(not inherited) with all subclasses.
+https://stackoverflow.com/questions/37226269/are-static-variables-inherited
+
+Is java purely oop?                                                                     -- no, because it still has primitive data types.
+
+Pillars of OOPs -                                                                      --abstraction, inheritance, encapsulation, polymorphism
+
+keywords for inheritance and interface implementation                                   --extends, implements
+
+Types of inheritance in java. explain them. Implement them.                                      --single, multilevel, hierarchical (through classes)
+                                                                                                  --multiple, hybrid (through interface)
+
+Interface vs Abstract classes                                                               --interface is a contract that has to be implemented by class implementing it. interface can't have any definition of methods. just declaration of methods.
+                                                                                           --abstract class is a class that has at least one abstract method. method without definition.
+
+
+can interface have variables ?                                                                 yes. they are static and final by default.
+
+
+----------------------------------------------------------
+
+
+
+https://www.scaler.com/topics/why-string-is-immutable-in-java/
+
+What is string immutability in java?                                              --string contents can't be changed once a string is created in string pool.
+                                                                                  -- if you change contents of string, a new string is created.
+
+
+Why string immutability ?                                                              --String operations and storage is costly. security reasons. can't change string
+
+How long a string resides in string pool ?                                          --until there are no references to it. Then gc comes and cleans it.s
+
+Where is string pool ?                                                              -- in heap.
+
+string str = "ABC"  VS  String str = new String("ABC") diff ? where these two string will take space in memory?
+    https://www.scaler.com/topics/java/string-pool-in-j
+
+What is heap?                                                                      -- memory allocated to program. dynamic in size.
+https://www.geeksforgeeks.org/what-is-a-memory-heap/
+
+
+What does heap and stack contain?                                                           --stack contains local and primitive values and references to objects.
+                                                                                             --heap contains objects in java.
+
+Heaps vs stack?  Compare their size, memory management, safety etc.                                                            --stack is contiguous and safe. needs no memory management. heaps need memory to be allocated and deallocated, but in java gc does that. heaps are not contiguous.
+https://www.geeksforgeeks.org/stack-vs-heap-memory-allocation/
+
+
+StringBuilder, vs StringBuffer vs string?                                  --string buffer is thread safe, use string buffer , builder when want mutable strings
+-------------------------------------------------------------
+
+
+
+
+See the collection framework architecture
+
+When to use which collection
+https://stackoverflow.com/questions/21974361/which-java-collection-should-i-use
+
+Why use List<T> = new ArrayList rather than ArrayList<T> = new ArrayList()?
+
+
+Comparable vs Comparator in java.
+
+Collection vs Collections in java                                       -- collection is an interface , collections is a class
+
+Array vs collection                                                      -- static vs dynamic size,homo vs hetro objects, ready made methods
+
+advantage of collection framework                                         -- consistent API. since they all implement the same core methods, readability
+                                                                         --avoiding reinventing the wheel
+
+advantages of generics                                               -- type safe, no type casting needed
+
+Do collections work with primitive data types                            --No,they work with objects only but autoboxing and unboxing takes care of it.
+
+
+Vector vs arrayList                                                    -- vector is sync (thread safe). arrayList is not & thus faster.
+
+Can we add null in TreeSet                                              -- no it will throw null pointer exception
+
+Iterator vs ListIterator                                            --Iterator traverses in forward direction only, listIterator in both directions
+                                                                    --ListIterator is used with lists only and it can return index as well as modify collection
+
+List vs Set                                                            --set only has unique values
+
+Hashset vs HashMap                                                    -- diff parent interfaces.
+
+HashMap vs Hashtable                                                      --hashtable is thread safe & doesn't allow any null values .
+
+how hashmap works internally?
+
+
+hashmap vs linkedHashmap vs treemap
+           --hashmap - no ordering, uses hashtable,
+           --linkedHashmap - insertion order maintained, uses double linked buckets
+           --treemap - natural ordering or according to comparator, uses red black tree. insertion time log n
+
+----------------------------
+
+
+Solid  principle
+                             --single responsibility principle,
+                             -- open closed principle (open for extended, close for modified)
+                             --liskov substitution - superclass obj should be replaceable by subclass obj.
+                             --interface segregation principle - client shouldn't be forced to implement interface it doens't use.
+                             -- Dependency inversion -- we should depend on interface, abstraction. Details should depend on abstraction, not vice versa.
+
+
+sync vs volatile vs atomic?
+
+what is race condition?                                                        --when two or more threads compete to access/modify same resource.
+
+what is thread safe? how to achieve thread safety?                           -- use sync, volatile ,atomic , final
