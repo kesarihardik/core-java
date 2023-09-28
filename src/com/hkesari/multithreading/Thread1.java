@@ -5,7 +5,7 @@ thread                -- single sequential flow of control in a program. basic u
 multithreading        -- executing 2 or more concurrent threads.
 What is  thread life cycle ?
 
-How to implement multithreading                 --extending Thread class and implementing Runnable interface.
+How to implement multithreading                  --extending Thread class and implementing Runnable interface.
                                                     override the run method in both ways and use start to execute thread.
                                                     Thread object implements runnable.
                                                     start method invokes run.
@@ -31,7 +31,7 @@ class Hello extends Thread{
         }
     }
 }
-public class ThreadClass1 {
+public class Thread1 {
     public static void main(String[] args){
         Hi o1 = new Hi();
         Hello o2 = new Hello();

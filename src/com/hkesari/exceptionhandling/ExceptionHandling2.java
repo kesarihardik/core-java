@@ -1,6 +1,6 @@
 package com.hkesari.exceptionhandling;
 
-//Write a user defined exception class
+//User defined exception
 
 class InvalidAgeException extends Exception{
     public InvalidAgeException(String str){          //constructor
@@ -9,7 +9,7 @@ class InvalidAgeException extends Exception{
 }
 
 
-public class CustomException {
+public class ExceptionHandling2 {
     public static void validate(int age) throws InvalidAgeException {
         if(age<18){
             throw new InvalidAgeException("You are not adult.");

@@ -16,7 +16,7 @@ package com.hkesari.multithreading;
     public int getCount(){return this.count;}
 }
 
-public class Sync4 {
+public class Thread4 {
     public static void main(String[] args) throws InterruptedException{
        Counter A = new Counter();
 

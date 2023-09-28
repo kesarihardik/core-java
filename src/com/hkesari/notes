@@ -172,6 +172,15 @@ Solid  principle
                              --interface segregation principle - client shouldn't be forced to implement interface it doens't use.
                              -- Dependency inversion -- we should depend on interface, abstraction. Details should depend on abstraction, not vice versa.
 
+-------------- Multithreading
+
+Process vs program
+
+Thread
+
+Multitasking vs multithreading
+
+Platform thread vs virtual thread
 
 sync vs volatile vs atomic?
 

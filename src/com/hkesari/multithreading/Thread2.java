@@ -27,7 +27,7 @@ class There implements Runnable{
 }
 
 
-public class RunnableImpl2 {
+public class Thread2 {
     public static void main(String[] args) throws InterruptedException {
         Hey n1 = new Hey();
         There n2 = new There();

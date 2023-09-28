@@ -1,7 +1,7 @@
 package com.hkesari.generics;
 import java.util.*;
 
-//What are wildcards?                        feature in generics to make the type constraint more flexible or accept unknown type.
+//What are wildcards?                         feature in generics to make the type constraint more flexible or accept unknown type.
 //types of wildcards?                           they are of 3 types - unbounded, bounded(lower & upper bound)
 //?  represents wildcard.
 public class WildCards4 {
