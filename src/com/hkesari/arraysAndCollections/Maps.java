@@ -7,7 +7,8 @@ public class Maps {
          Map<Integer,Integer> mp = new HashMap<>();
          mp.put(2,3);
          mp.put(3,4);
-         mp.put(3,5);
+         mp.put(4,5);
+         mp.put(1,5);
          System.out.println(mp);
 
          System.out.println(mp.get(2));
@@ -17,9 +18,14 @@ public class Maps {
 
          mp.remove(2);
 
-         for(Integer key : mp.keySet()){
-             System.out.println(key+"--"+mp.get(key));
-         }
+//         for(Integer key : mp.keySet()){
+//             System.out.println(key+"--"+mp.get(key));
+//         }
+
+        mp.forEach((k,v)->{
+            System.out.printf("Key : %d, value: %d %n",k,v);
+        });
+
      }
 }
 

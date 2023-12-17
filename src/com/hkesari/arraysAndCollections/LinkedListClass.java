@@ -21,9 +21,12 @@ public class LinkedListClass {
 
         System.out.println(ll);
 
-       Iterator<Integer> it = ll.iterator();            //Iterator it = ll.iterator(); works fine too
-       while(it.hasNext()){
-           System.out.println(it.next());
-       }
+//       Iterator<Integer> it = ll.iterator();            //Iterator it = ll.iterator(); works fine too
+//       while(it.hasNext()){
+//           System.out.println(it.next());
+//       }
+
+        //method reference
+       ll.forEach(System.out::println);
     }
 }

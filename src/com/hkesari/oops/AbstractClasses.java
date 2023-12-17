@@ -1,11 +1,10 @@
 package com.hkesari.oops;
 /*
-Abstract class                             --abstraction classes have at least one abstract class.
+Abstract class                             --abstraction classes have at least one abstract method.
                                              -- They can also have non-abstract methods, instance variables.
 
-Why can't top level abstract methods/ interfaces  cant be private?                        --because then they are useless. no class can use them.
-
-abstract class cant be instantiated.
+top level abstract methods/ interfaces  cant be private?
+abstract class can not be instantiated.
 abstract classes have constructors unlike interfaces.
 A class can't extend 2 abstract classes.  -- no multiple inheritance
 Instance variables in abs classes can be public, private etc.

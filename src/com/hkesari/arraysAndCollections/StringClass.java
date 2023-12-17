@@ -1,8 +1,4 @@
 package com.hkesari.arraysAndCollections;
-// strings - String.charAt(), length(), toCharArray, toUpperCase, toLowerCase
-//characters  - Character.isAlphabetic(), Character.isLetter(), Character.isDigit(), isUpperCase();
-
-//StringBuilder has append() and toString() methods.
 
 import java.lang.String;
 public class StringClass {

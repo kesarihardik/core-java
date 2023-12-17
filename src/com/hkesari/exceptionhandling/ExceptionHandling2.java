@@ -10,7 +10,7 @@ class InvalidAgeException extends Exception{
 
 
 public class ExceptionHandling2 {
-    public static void validate(int age) throws InvalidAgeException {
+    private static void validate(int age) throws InvalidAgeException {
         if(age<18){
             throw new InvalidAgeException("You are not adult.");
         }else {
@@ -24,7 +24,7 @@ public class ExceptionHandling2 {
             validate(age);
         }
         catch(InvalidAgeException ex){
-            System.out.println(ex);
+            System.out.println(ex.getMessage());
         }
         finally{
             System.out.println("Thank You");

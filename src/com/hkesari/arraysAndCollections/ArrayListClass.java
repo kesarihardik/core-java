@@ -6,7 +6,7 @@ public class ArrayListClass {
 //        List<Integer> arr = new ArrayList<>();
 //        arr.add(12);
 //        arr.add(3);
-//        arr.add(24);
+//        arr.remove(0);
 //        System.out.println(arr);
 
 
@@ -21,10 +21,13 @@ public class ArrayListClass {
        System.out.println(list.indexOf(22));
        System.out.println(list);
 
-       Collections.sort(list);
+       //sort, reverse
 
-       System.out.println(list);
-       Collections.reverse(list);
+//       Collections.reverse(list);
+
+//       Collections.sort(list);
+//       System.out.println(list);
+
        list.sort(Collections.reverseOrder());
 
        System.out.println(list);
@@ -35,13 +38,18 @@ public class ArrayListClass {
        list2.add(Arrays.asList(1,2,3,4));
        list2.add(Arrays.asList(5,6,7,8));
 
-       System.out.println(list2);
+       //Print
+//       System.out.println(list2);
+       list2.forEach(e->{
+          System.out.println(e.toString());
+       });
+
+       //get , set , contains
        System.out.println(list2.size());
         System.out.println(list2.get(0).size());
        System.out.println(list2.get(1).get(2));
 
        System.out.println(list2.get(1).contains(8));
        System.out.println(list2.get(1).contains(-8));
-
     }
 }

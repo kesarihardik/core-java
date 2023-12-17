@@ -1,7 +1,7 @@
 
 
 
-Is java compiled or interpreted?                                           --in between. Just in time compilation happens.
+Is java compiled or interpreted?                                          --in between. Just in time compilation happens.
 
 What is just in time compilation?                                        --java code is converted into bytecode which is platform independent.
 
@@ -106,8 +106,8 @@ What is heap?                                                                   
 https://www.geeksforgeeks.org/what-is-a-memory-heap/
 
 
-What does heap and stack contain?                                                           --stack contains local and primitive values and references to objects.
-                                                                                             --heap contains objects in java.
+heap vs stack memory?                                                              --stack contains local and primitive values and references to objects.
+                                                                                   --heap contains objects in java.
 
 Heaps vs stack?  Compare their size, memory management, safety etc.                                                            --stack is contiguous and safe. needs no memory management. heaps need memory to be allocated and deallocated, but in java gc does that. heaps are not contiguous.
 https://www.geeksforgeeks.org/stack-vs-heap-memory-allocation/
@@ -115,9 +115,6 @@ https://www.geeksforgeeks.org/stack-vs-heap-memory-allocation/
 
 StringBuilder, vs StringBuffer vs string?                                  --string buffer is thread safe, use string buffer , builder when want mutable strings
 -------------------------------------------------------------
-
-
-
 
 See the collection framework architecture
 
@@ -162,21 +159,26 @@ hashmap vs linkedHashmap vs treemap
            --linkedHashmap - insertion order maintained, uses double linked buckets
            --treemap - natural ordering or according to comparator, uses red black tree. insertion time log n
 
-----------------------------
+---------------------------------------------
 
 
 Solid  principle
                              --single responsibility principle,
-                             -- open closed principle (open for extended, close for modified)
+                             -- open closed principle (open for extension, closed for modification)
                              --liskov substitution - superclass obj should be replaceable by subclass obj.
-                             --interface segregation principle - client shouldn't be forced to implement interface it doens't use.
+                             --interface segregation principle - client shouldn't be forced to implement interface it doesn't use.
                              -- Dependency inversion -- we should depend on interface, abstraction. Details should depend on abstraction, not vice versa.
 
--------------- Multithreading
+-------------- Multithreading-------------------
 
-Process vs program
+Process vs program                                                          --program in execution is process.
 
-Thread
+Thread                                                                     -- single sequential flow of control in program. smallest sequence which is independently run by scheduler.
+
+thread safe
+https://stackoverflow.com/questions/2033879/what-does-threadsafe-mean
+
+synchronized vs non-synchronized.                                           --Synchronized implies thread safety. Collection classes are not synchronized.
 
 Multitasking vs multithreading
 
@@ -186,4 +188,4 @@ sync vs volatile vs atomic?
 
 what is race condition?                                                        --when two or more threads compete to access/modify same resource.
 
-what is thread safe? how to achieve thread safety?                           -- use sync, volatile ,atomic , final
+what is thread safe? how to achieve thread safety?                                -- use sync, volatile ,atomic , final
