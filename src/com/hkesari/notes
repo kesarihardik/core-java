@@ -161,13 +161,21 @@ hashmap vs linkedHashmap vs treemap
 
 ---------------------------------------------
 
+Java 8 features
+                 -- functional interface, lambda, optional class, datetime api, comparable vs comparator, streams , method reference
 
+
+stream vs collection ?
+-------------------------------------------------
 Solid  principle
                              --single responsibility principle,
                              -- open closed principle (open for extension, closed for modification)
                              --liskov substitution - superclass obj should be replaceable by subclass obj.
                              --interface segregation principle - client shouldn't be forced to implement interface it doesn't use.
                              -- Dependency inversion -- we should depend on interface, abstraction. Details should depend on abstraction, not vice versa.
+
+
+Serialization, transient
 
 -------------- Multithreading-------------------
 

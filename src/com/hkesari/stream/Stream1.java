@@ -21,14 +21,14 @@ public class Stream1 {
 //          list.forEach(x->System.out.println(x));
 
         //Sort elements and print
-        list.stream().sorted().forEach(x->System.out.println(x));
+        list.stream().sorted().forEach(System.out::println);
 
 
         //Double values in the list
         list.stream()
                 .sorted()
                 .map(x->2*x)
-                .forEach(x->System.out.println(x));                            //3 streams in total.
+                .forEach(System.out::println);                            //3 streams in total.
 
 
         //Find even values
