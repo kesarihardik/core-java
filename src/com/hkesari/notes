@@ -37,19 +37,20 @@ Finally  = used with try and catch as the final step.
 Finalize = method called before gc cleans.
 
 
-When does finally execute in try - catch ?                                     - - always unless there is some system crash or deliberate termination.
+When does finally execute in try - catch ?                                   - always unless there is some system crash or deliberate termination.
 
 
 Entry point of java program ?
 
-this vs super in java                                                                     this - associated with present object, super - superclass
+this vs super in java                                                             this - associated with present object, super - superclass
 
 
 throw vs throws                                                                  -- throws is used in method definition to indicate that this method throws exception while throw is used to manually throw exception.
 
 ------------------------------
 
-
+data types in java
+                                          8 primitive types : boolean, char, double, float, int, short, long, byte
 
 Types of access modifier : public, private , default
 
@@ -59,7 +60,9 @@ Can top level class be private or protected?                                    
 
 Why main method is static ?                                                                --so that jvm can call it without creating instance of that class.
 
-Can static methods be overloaded/ overridden?                                   --only overloaded. no overrides since static methods are loaded at runtime and hence no runtime polymorphism
+Can static methods be overloaded/ overridden?
+                                                                                          --only overloaded. no overrides since static methods have static binding.
+                                                                                            they are associated with class, not an instance and hence no runtime polymorphism
 
 Can top level class be static?                                                         --By design, in java you can't add static to top level class. A non-static class can't exist without a static class. So, top level classes are always static.
 https://stackoverflow.com/questions/7370808/why-cant-a-top-level-class-be-static-in-java#:~:text=Since%20a%20top%2Dlevel%20class,level%20class%20definition%20is%20pointless.
@@ -76,12 +79,13 @@ keywords for inheritance and interface implementation                           
 Types of inheritance in java. explain them. Implement them.                                      --single, multilevel, hierarchical (through classes)
                                                                                                   --multiple, hybrid (through interface)
 
-Interface vs Abstract classes                                                               --interface is a contract that has to be implemented by class implementing it. interface can't have any definition of methods. just declaration of methods.
-                                                                                           --abstract class is a class that has at least one abstract method. method without definition.
+Interface vs Abstract classes                                                         --interface is a contract that has to be implemented by class implementing it.
+                                                                                         interface can't have any definition of methods. just declaration of methods.
+                                                                                     --abstract class is a class that has at least one abstract method. method without definition.
 
+marker interface
 
 can interface have variables ?                                                                 yes. they are static and final by default.
-
 
 ----------------------------------------------------------
 
@@ -109,7 +113,9 @@ https://www.geeksforgeeks.org/what-is-a-memory-heap/
 heap vs stack memory?                                                              --stack contains local and primitive values and references to objects.
                                                                                    --heap contains objects in java.
 
-Heaps vs stack?  Compare their size, memory management, safety etc.                                                            --stack is contiguous and safe. needs no memory management. heaps need memory to be allocated and deallocated, but in java gc does that. heaps are not contiguous.
+Heaps vs stack?  Compare their size, memory management, safety etc.                                  --stack is contiguous and safe. needs no memory management.
+                                                                                            heaps need memory to be allocated and deallocated, but in java gc does that.
+                                                                                             heaps are not contiguous.
 https://www.geeksforgeeks.org/stack-vs-heap-memory-allocation/
 
 
