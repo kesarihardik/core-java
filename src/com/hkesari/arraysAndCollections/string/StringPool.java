@@ -1,4 +1,4 @@
-package com.hkesari.string;
+package com.hkesari.arraysAndCollections.string;
 
 /*
   Strings are stored in SCP(string constant pool) or String Intern Pool.
@@ -25,6 +25,8 @@ public class StringPool {
         String obj1 = new String("Hello");
         String obj2 = new String("Hello");
         System.out.println(obj1 == obj2);
+        System.out.println(obj1 == literal2);
+        System.out.println(obj2 == literal2);
 
 
         //intern return ref of string in scp.

@@ -7,8 +7,6 @@ types of constructors                       default, parameterized, non-paramete
 
 can constructors be final?                -- Constructors are not inherited. hence they can't be final.
 
-When is default constructor made by compiler?                  -- if we don't make our own constructor
-
 default constructor invokes super class;
 */
 

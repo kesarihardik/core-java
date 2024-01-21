@@ -10,5 +10,7 @@ public class Stream3 {
         System.out.println(list.stream()
                 .mapToDouble(x->x)
                 .average().orElse(0.0));
+
+        list.stream().distinct().mapToDouble(x->x).forEach(System.out::println);
     }
 }

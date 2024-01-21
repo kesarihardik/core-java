@@ -1,7 +1,7 @@
 package com.hkesari.oops;
 
-//Lambda surpass the need to implement functional interface creating a derived class.
-//lambdas give clear and concise way to represent functional interface.
+//Lambda function is a function that we can reference and pass around as object.
+//lambdas give clear and concise way to represent functional interface, enables functional programming.
 
 //Functional Interface:                interface with exactly one abstract method
 //but there can be default and inherited methods.

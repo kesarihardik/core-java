@@ -1,27 +1,27 @@
 package com.hkesari.oops;
 
-//default - allows to define implementation in interfaces in java.
+// How is default method useful.                --allows backward compatibility
+//Java 8 allows to implement default implementation of methods. This allows us to add functionality to
+// interfaces without breaking existing code. (child classes don't have to implement the default method);
 
 interface Intf1{
-    default void foo(){
-        System.out.println("HI");
+     default void foo(){
+        System.out.println("Interface 1 method.");
     }
 }
 
-interface Intf2{
+interface Intf2 {
     default void foo(){
-        System.out.println("Hello");
+        System.out.println("Interface 2 method.");
     }
 }
 
-class DemoClass implements Intf1, Intf2{
-   @Override
+class DemoClass implements Intf2, Intf1{
+  @Override
     public void foo(){
-       Intf2.super.foo();
-   }
+      Intf1.super.foo();
+  }
 }
-
-
 
 public class Default {
     public static void main(String[] args) {
@@ -31,5 +31,4 @@ public class Default {
         DemoClass D = new DemoClass();
         D.foo();
     }
-
 }

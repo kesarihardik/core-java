@@ -1,6 +1,6 @@
 package com.hkesari.oops;
 
-//Inheritance                -- is a relationship // extends
+//Inheritance                               -- is a relationship // extends
 //What is not inherited?                     --constructors, static variables, instance variables
 class Shape {
     String color;

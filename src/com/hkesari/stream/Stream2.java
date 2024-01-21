@@ -1,8 +1,8 @@
 package com.hkesari.stream;
 import java.util.ArrayList;
 import java.util.*;
+import java.util.stream.Collectors;
 
-//Program to map list of objects(string,boolean) to map using streams
 public class Stream2 {
     public static void main(String[] args){
         List<Object> list = new ArrayList<>();
@@ -10,14 +10,10 @@ public class Stream2 {
         list.add(true);
         list.add("string");
 
-        Map<Object,Object> mp = new HashMap<>();
-        list.stream().forEach(x->{
-             mp.put(x,x);
-        });
+        Object[]  o = list.stream().toArray();                      //list.toArray();
+        System.out.println(Arrays.toString(o));
 
-        for(Object ob: mp.keySet()){
-            System.out.println(ob +" -- "+mp.get(ob));
-        }
+        Set s =  list.stream().collect(Collectors.toSet());        // new HashSet<>(list);
 
     }
 }
