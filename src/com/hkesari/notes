@@ -83,7 +83,7 @@ Interface vs Abstract classes                                                   
                                                                                          interface can't have any definition of methods. just declaration of methods.
                                                                                      --abstract class is a class that has at least one abstract method. method without definition.
 
-marker interface
+marker interface & examples                                 serializable, cloneable
 
 can interface have variables ?                                                                 yes. they are static and final by default.
 

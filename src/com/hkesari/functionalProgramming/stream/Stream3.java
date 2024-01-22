@@ -1,4 +1,4 @@
-package com.hkesari.stream;
+package com.hkesari.functionalProgramming.stream;
 import java.util.*;
 
 //calculate average using streams

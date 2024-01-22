@@ -1,12 +1,9 @@
-package com.hkesari.oops;
+package com.hkesari.functionalProgramming;
 
-//Lambda function is a function that we can reference and pass around as object.
-//lambdas give clear and concise way to represent functional interface, enables functional programming.
+//Lambda function :    anonymous functions that we can reference and pass around as object.
+//lambdas give clear and concise way to represent functional interface, enables functional programming. It's a syntactic sugar.
 
-//Functional Interface:                interface with exactly one abstract method
-//but there can be default and inherited methods.
-
-@FunctionalInterface                                    //informative annotation
+@FunctionalInterface                                   //informative annotation
 interface A{
     void show();                                      //non-overriding abstract method
     //void talk();                                     //err . only 1 abstract method allowed.

@@ -1,4 +1,4 @@
-package com.hkesari.stream;
+package com.hkesari.functionalProgramming.stream;
 import java.util.ArrayList;
 import java.util.*;
 import java.util.stream.Collectors;
