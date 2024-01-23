@@ -132,7 +132,10 @@ Why use List<T> = new ArrayList rather than ArrayList<T> = new ArrayList()?
 
 Comparable vs Comparator in java.
 
-Collection vs Collections in java                                       -- collection is an interface , collections is a class
+Collection vs Collections in java                                     --both are in java.util package. Collection is an interface. Collection framework has many interfaces - set,map,etc
+                                                                        collections is a class containing utility methods - reverse(),sort()
+
+
 
 Array vs collection                                                      -- static vs dynamic size,homo vs hetro objects, ready made methods
 

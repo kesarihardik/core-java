@@ -1,13 +1,13 @@
 package com.hkesari.generics;
 
 //What types aren't allowed with generics?                            //Primitive types.
-// Why doesn't generic work with primitive data types?                // Because Integer extends Object, not int.  int,float aren't subclasses of Object class and generic type is replaced by Object at run time.
+// Why doesn't generic work with primitive data types?                // Generic type is replaced by Object at run time & primitive types aren't subclasses of Object type
 
 
 import java.util.ArrayList;
 import java.util.List;
 
-public class WrapperClass1 {
+public class WrapperClass {
     static <T> void display(T x){             //generic method
         System.out.println(x);
     }

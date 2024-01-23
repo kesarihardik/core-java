@@ -16,7 +16,7 @@ public class ArrayListClass {
        list.remove(2);
 
        System.out.println(list.size());
-       System.out.println(list.get(0));
+       System.out.println(list.getFirst());
        System.out.println(list.contains(24));
        System.out.println(list.indexOf(22));
        System.out.println(list);
@@ -43,7 +43,6 @@ public class ArrayListClass {
        list2.forEach(e->{
           System.out.println(e.toString());
        });
-
        //get , set , contains
        System.out.println(list2.size());
         System.out.println(list2.get(0).size());

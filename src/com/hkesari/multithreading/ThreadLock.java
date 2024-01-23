@@ -28,7 +28,7 @@ class CounterClass{
     }
 }
 class IncrementThread extends Thread{
-    private CounterClass counterClass;
+    private final CounterClass counterClass;
 
     public  IncrementThread(CounterClass counterClass){
         this.counterClass = counterClass;

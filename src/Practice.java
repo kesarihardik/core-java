@@ -1,18 +1,17 @@
-
-interface Car{
-    void run();
-}
+import java.util.ArrayList;
+import java.util.*;
+import java.util.function.Consumer;
+import java.util.function.Predicate;
+import java.util.function.Supplier;
 
 
 public class Practice {
-
     public static void main(String[] args){
-        boolean x =  true;
-        Integer y = 4;
 
-        Car c = ()->System.out.println("Runs");
-        c.run();;
+     Predicate<Integer> isEven = x->x%2==0;
 
+     Consumer<Object> p = System.out::print;
+     Supplier<Double> s =  Math::random;
 
 
     }

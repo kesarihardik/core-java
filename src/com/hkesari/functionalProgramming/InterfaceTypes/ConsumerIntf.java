@@ -13,5 +13,12 @@ public class ConsumerIntf {
         print.accept(12);
         printBoth.accept("Hari","Har");
 
+        Consumer<String> first = x->System.out.println(x.toLowerCase());
+        Consumer<String> second = x->System.out.println(x.toUpperCase());
+        Consumer<String> compose = first.andThen(second);
+
+        second.andThen(first).accept("Kesari");
+        compose.accept("Kesari");
+
     }
 }
