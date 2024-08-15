@@ -1,26 +1,21 @@
 package com.hkesari.functionalProgramming.stream;
-import java.util.ArrayList;
 import java.util.*;
-import java.util.function.Function;
-import java.util.stream.Collectors;
+import java.util.stream.Stream;
 
 public class Stream2 {
-    public static void main(String[] args){
-        List<Object> list = new ArrayList<>();
-        list.add(123);
-        list.add(true);
-        list.add("string");
+    public static void main(String[] args) {
 
-        Object[]  o = list.stream().toArray();                      //list.toArray();
-        System.out.println(Arrays.toString(o));
+//        Stream.of("a1","a2","a3").map(s->s.substring(1)).mapToDouble(Double::parseDouble).forEach(System.out::println);
 
-        Set s =  list.stream().collect(Collectors.toSet());        // new HashSet<>(list);
+//        Stream.concat(Stream.of(12,12),Stream.of(14,15)).forEach(System.out::println);
 
-        List<String> words = Arrays.asList("Java", "is", "fun", "with", "Collectors", "joining");
-        String result1 = words.stream().collect(Collectors.joining(","));
-        System.out.println("Result 1: " + result1);
+        //max , min
+//        Optional<Integer> max = Stream.of(12,14,156).max((a,b)->a-b);
 
-        Map<String, Integer> map = words.stream().collect(Collectors.toMap(Function.identity(), String::length));
-        map.forEach((k,v)->System.out.println(k+" "+v));
+                //find average
+                List < Integer > list = Arrays.asList(12, 13, 14, 14, 15);
+        System.out.println(list.stream()
+                .mapToDouble(x->x)
+                .average().orElse(0.0));
     }
 }

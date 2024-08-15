@@ -1,11 +1,11 @@
-package com.hkesari.functionalProgramming.InterfaceTypes;
+package com.hkesari.functionalProgramming.FunctionalInterface;
 
 import java.util.function.BiConsumer;
 import java.util.function.Consumer;
 
 /*Consumer  - takes one argument and returns nothing. accept(), andThen()*/
 
-public class ConsumerIntf {
+public class FuncInterface2 {
         public static void main(String[] args){
         Consumer<Object> print = System.out::println;
         BiConsumer<Object,Object> printBoth = (x,y)->System.out.println(x.toString() + " " + y.toString());
