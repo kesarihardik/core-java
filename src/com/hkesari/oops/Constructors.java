@@ -1,8 +1,9 @@
 package com.hkesari.oops;
 
 /*
- constructors                            -- special methods to instantiate methods. helpful in assigning values to obj members
-                                         using constructor we can tell about dependencies and initialise object with default values.
+ constructors                            -- special methods to instantiate objects. no return type.
+                                            helpful in assigning values to obj members
+                                            using constructor we can tell about dependencies and initialise object with default values.
 types of constructors                       default, parameterized, non-parameterized, copy
 
 can constructors be final?                -- Constructors are not inherited. hence they can't be final.
@@ -69,7 +70,7 @@ class Dog {
 
 }
 public class Constructors {
-    public static void main(String args[]){
+    public static void main(String[] args){
         Dog d1 = new Dog();
         d1.name = "Kalu";
         d1.age=5;

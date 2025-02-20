@@ -1,7 +1,11 @@
 package com.hkesari.functionalProgramming;
 
-//Lambda function :    anonymous functions that we can reference and pass around as object.
-//lambda:  give clear and concise way to represent functional interface, enables functional programming. It's a syntactic sugar.
+/*
+Lambda function :  anonymous functions that we can reference and pass around as object.
+lambda:  give clear and concise way to represent functional interface, enables functional programming.
+         It's a syntactic sugar.
+         Using lambda we can avoid making classes for implementing functional interface.
+ */
 
 @FunctionalInterface                                   //informative annotation
 interface A{

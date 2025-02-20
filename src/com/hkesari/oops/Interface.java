@@ -1,22 +1,28 @@
 package com.hkesari.oops;
 /*
-Interface          Methods here have no implementation/ declaration. It contains only method signature/ declaration.
+Interface          100% abstraction. Methods here have no implementation/ declaration. It contains only method signature/ declaration.
                    Contract : Class inheriting interface must implement those methods.
 
-                   Java 8 allows to define default implementation of methods
-
 Interface can inherit one or more interfaces. --since multiple inheritance works with interfaces.
-Interfaces don't have constructor.
 
 Fields inside interface are public,static and final by default.
+Interfaces don't have constructor.
+Interfaces can't be final/ private.
 */
 interface Mammal{
     int eyes = 2;        //static member
+    void walk();
 
+    //Java 8 allows to define default implementation of methods
     default void sound(){
         System.out.println("Default Sound.");
     }
-    void walk();
+
+    //private methods of interface must have body
+    private void foo() {
+
+    }
+
 }
 
 
@@ -43,6 +49,7 @@ public class Interface{
         l.sound();
 
 
+        System.out.println(Mammal.eyes);
         System.out.println(l.eyes);            //static member is accessible without object.
     }
 

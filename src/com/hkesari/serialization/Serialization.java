@@ -1,20 +1,22 @@
-//Transfer objects over network, channel.        --serialize them
-//serialize objects -> transfer -> deserialize . this will create exactly same obj on the other end with same state.
+package com.hkesari.serialization;
 
-//Serialization : obj -> stream of bytes
-//Deserialization : stream of bytes -> objects
+import java.io.*;
+
+/*Serialization = turn objects to byte array/ byte stream. Deserialization is opposite
+ * Why?     --- state of object can be shared, saved or transmitted over another network(when memory isn't shared).
+ *             save time of recreating deep copy of object often.
+ *
+ *serialVersionUID =  unique identifier used for version control/ compatibility in the serialization & deserialization process of Java objects.
+ */
 
 //serializable interface ->
 //FileOutputStream -  stream -> file.
 //ObjectOutputStream - primitive data types and objects -> stream
 //writeObject and readObject -> close
 
+//transient - makes a field non-serializable.
 
-package com.hkesari.serialization;
-
-import java.io.*;
-
-class User implements Serializable {
+class User implements Serializable {       //Serializable is marker interface
     String name;
     int age;
 

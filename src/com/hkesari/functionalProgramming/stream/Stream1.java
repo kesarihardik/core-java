@@ -5,10 +5,15 @@ import java.util.stream.IntStream;
 import java.util.stream.Stream;
 
 /*
+Stream: sequence of data that can be processed in declarative and functional style.
+        It enables functional programming for us.
+     (Stream is an abstraction of non-mutable collection of functions applied in some order to data.)
+
 Stream vs collection -
-         Stream is an abstraction of non-mutable collection of functions applied in some order to data.
-         Stream is not collection. It doesn't store data. It enables functional programming for us.
-         Stream doesn't change original data. It also can not be reused.
+        Stream is not collection. It doesn't store data. Collection stores data. Collection is a container.
+        Stream doesn't change original data.
+        Streams can be traversed only once.
+        Streams can't be reused.
 
    Most used methods - forEach, map, flatMap, filter, reduce, sum, average, count, mapToInt, collect, distinct
  */

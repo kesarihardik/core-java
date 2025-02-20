@@ -1,18 +1,20 @@
 package com.hkesari.exceptionhandling;
-/*
-Exception -            unexpected/unwarranted error or event while runtime that disrupts the normal flow of program
+    /*
+Exception :  unexpected/unwarranted error or event while runtime that disrupts the normal flow of program
 
 error vs exception
-                     --both belong to throwable object in java.
-                     --errors belong to Error class, exception belong to Exception class.
-                     -- errors are beyond the scope of program. They can't be recovered from.
-                      --we handle exception. errors are beyond application scope.
-                      ---errors are always of unchecked types. exceptions are of checked and unchecked types.
+        - both belong to throwable class in java.
+        - errors belong to Error class, exception belong to Exception class.
+        - errors are beyond the scope of program. They can't be recovered from. e.g - OutOfMemoryError
+        - we handle exception. errors are beyond application scope.
+        - errors are always of unchecked types. exceptions are of checked and unchecked types.
 
-exception types -                        -- built in , user defined
-                                         -- built in has 2 types
-                                         checked/ compile time(interrupted exception, class not found, file not found, sql)
-                                         unchecked / runtime (null pointer, arithmetic,array out of bound)
+exception types :  built in, user defined
+                  built in has 2 types
+                         - checked/ compile time(interrupted exception, class not found, file not found, sql)
+                         - unchecked / runtime (null pointer, arithmetic,array out of bound)
+
+                         -user defined is always runtime exception.
 */
 
 

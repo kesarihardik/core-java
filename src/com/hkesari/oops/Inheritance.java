@@ -1,7 +1,12 @@
 package com.hkesari.oops;
 
-//Inheritance                               -- is a relationship // extends
-//What is not inherited?                     --constructors, static variables, instance variables
+/*Inheritance                               -- is a relationship // extends
+ What is never inherited?                 --constructors, static initializers, instance initializer since they don't belong to object.
+ private field inherited?                    https://stackoverflow.com/questions/4716040/do-subclasses-inherit-private-fields
+ all classes except Object have at least one superclass - Object.
+ types                          --- single, multilevel, hierarchical, multiple, hybrid
+*/
+
 class Shape {
     String color;
 

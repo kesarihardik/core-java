@@ -13,9 +13,9 @@ public class CheckType {
 
         Scanner sc = new Scanner(System.in);
 
-        //        System.out.println("Please enter a string.");
-        //        String  s = sc.nextLine();
-        //        System.out.println(s);
+        System.out.println("Please enter a string.");
+        String  s = sc.nextLine();
+        System.out.println(s);
 
         System.out.println("Please enter numbers");
         while(sc.hasNext()){

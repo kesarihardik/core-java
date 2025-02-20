@@ -1,11 +1,14 @@
 package com.hkesari.cloning;
 
-//cloning - creating a copy
-//shallow - no new obj created. same object is referenced  / copies the value of references in the class
-//deep copy - new object is created and referenced  / copies the actual values
-//shallow copy = same object. diff reference.
+/*
+cloning - creating a copy. types - shallow, deep.
+   shallow : same object, diff reference. creates new reference and assigns same object to it.
+   deep: creates separate object similar to original.
+*/
 
-//cloneable interface
+//cloneable interface - marker interface (interface with empty body). It helps jvm understand which object can call clone() method of Object class.
+//clone() method created a deep copy.
+
 class Value implements Cloneable {
     int value;
 
@@ -24,21 +27,25 @@ class Value implements Cloneable {
     public Object clone() throws CloneNotSupportedException {
         return super.clone();
     }
+
+    @Override
+    public String toString() {
+        return "Value{" +
+                "value=" + value +
+                '}';
+    }
 }
 public class Cloning {
     public static void main(String[] args) throws CloneNotSupportedException {
-        Value v1 = new Value(10);
+        Value actualObject = new Value(10);
+        Value shallowClone = actualObject;                    //shallow copy
+        Value deepClone = (Value) actualObject.clone();        //deep copy
 
-        Value v2 = v1;                    //shallow copy
-        Value v3 = (Value)v1.clone();
+        shallowClone.value = 5;     //modifies actual object
+        System.out.printf("\nactual - %s, shallow - %s", actualObject, shallowClone);
 
-        v2.value=14;
-        v3.value=15;
-        System.out.println(v1.value);
-
-        System.out.println(v1==v2);         //compare references
-
-        System.out.println(v1==v3);
+        System.out.println(actualObject==deepClone);
+        System.out.printf("\nactual - %s, deep - %s", actualObject, deepClone);
     }
 }
 

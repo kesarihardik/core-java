@@ -1,6 +1,6 @@
 package com.hkesari.exceptionhandling;
 
-//User defined exception
+//User defined exception - extend Exception class
 
 class InvalidAgeException extends Exception{
     public InvalidAgeException(String str){          //constructor

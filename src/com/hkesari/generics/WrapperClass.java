@@ -1,8 +1,10 @@
 package com.hkesari.generics;
 
-//What types aren't allowed with generics?                            //Primitive types.
-// Why doesn't generic work with primitive data types?                // Generic type is replaced by Object at run time & primitive types aren't subclasses of Object type
-
+/*
+  Wrapper class : class that encapsulates types.
+                - this allows us to create object instances and methods
+                - allowing types to be used by Generics.
+*/
 
 import java.util.ArrayList;
 import java.util.List;
