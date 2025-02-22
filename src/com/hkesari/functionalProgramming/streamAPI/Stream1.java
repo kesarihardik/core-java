@@ -1,4 +1,4 @@
-package com.hkesari.functionalProgramming.stream;
+package com.hkesari.functionalProgramming.streamAPI;
 
 import java.util.*;
 import java.util.stream.IntStream;

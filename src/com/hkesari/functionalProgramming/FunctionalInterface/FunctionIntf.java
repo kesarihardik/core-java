@@ -1,10 +1,10 @@
 package com.hkesari.functionalProgramming.FunctionalInterface;
 
-import java.util.function.Function;
-
 //Function - take one parameter and produces a result.
 
-public class FuncInterface4 {
+import java.util.function.Function;
+
+public class FunctionIntf {
     public static void main(String[] args){
         Function<Double,Double> half = x->x/2.0;
         Function<Double,Double> triple = x->x*3.0;

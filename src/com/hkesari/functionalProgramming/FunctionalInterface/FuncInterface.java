@@ -24,7 +24,7 @@ types - function, consumer, supplier, predicate
 
 @FunctionalInterface
 interface A0{
-    static int i = 3;
+    int i = 3;
     void abstractMethod();
     public static void staticMethod(){
         System.out.println("static method called.");
@@ -41,7 +41,7 @@ interface A0{
     int hashCode();
 }
 
-public class FuncInterface0 {
+public class FuncInterface {
     public static  void main(String[] args){
         A0.staticMethod();
     }

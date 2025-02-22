@@ -2,15 +2,19 @@ package com.hkesari.oops;
 /*
 Interface          100% abstraction. Methods here have no implementation/ declaration. It contains only method signature/ declaration.
                    Contract : Class inheriting interface must implement those methods.
+                   Interfaces don't have constructor unlike abstract class.
+
+In modern Java, interfaces can have default methods and private methods which contain their own implementation.
 
 Interface can inherit one or more interfaces. --since multiple inheritance works with interfaces.
 
-Fields inside interface are public,static and final by default.
-Interfaces don't have constructor.
 Interfaces can't be final/ private.
+Fields inside interface are public,static and final by default.
+Static fields of interfaces are shared by implementing classes unless hidden due to re-defined again.
+
 */
 interface Mammal{
-    int eyes = 2;        //static member
+    int eyes = 2;        //public static and final field
     void walk();
 
     //Java 8 allows to define default implementation of methods
@@ -22,6 +26,9 @@ interface Mammal{
     private void foo() {
 
     }
+
+    //static methods  - not inherited by implementing classes
+    private static void hoo(){}
 
 }
 
@@ -44,13 +51,14 @@ interface Herbivore {
 
 public class Interface{
     public static void main(String[] args){
-        Lion l = new Lion();
+        Mammal l = new Lion();          //loose coupling. reference variable of superclass points to subclass.
         l.walk();
         l.sound();
 
-
         System.out.println(Mammal.eyes);
-        System.out.println(l.eyes);            //static member is accessible without object.
+        System.out.println(l.eyes);
+        System.out.println(Lion.eyes);
+        //        l.hoo()         -- static method not inherited.
     }
 
 }

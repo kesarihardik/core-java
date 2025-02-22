@@ -4,6 +4,8 @@ package com.hkesari.oops;
 /*
 Java 8 allows to implement default implementation of methods. This allows us to add functionality to
 interfaces without breaking existing code. (child classes don't have to implement the default method);
+
+default methods can be over-ridden. Hence, can't be private or static, final.
 */
 
 interface Intf1{

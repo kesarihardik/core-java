@@ -10,6 +10,9 @@ public class StringClass {
         System.out.println(str.substring(0,4));                // [a,b)          a inclusive, b excluded
         System.out.println(str.charAt(0));
 
+//        str.indexOf('r');
+//        str.lastIndexOf('t');
+
         //convert to char array
         char [] arr = str.toCharArray();
         for(char c : arr){

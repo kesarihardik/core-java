@@ -1,6 +1,5 @@
-package com.hkesari.functionalProgramming.stream;
+package com.hkesari.functionalProgramming.streamAPI;
 import java.util.*;
-import java.util.stream.Stream;
 
 public class Stream2 {
     public static void main(String[] args) {

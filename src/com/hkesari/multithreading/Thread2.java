@@ -1,6 +1,6 @@
 package com.hkesari.multithreading;
 
-//Implement multithreading using thread runnable interface
+//Implement multithreading using thread runnable interface which is a functional interface.
 //methods in thread              -- Thread.getName(), Thread.setName(), setPriority(), getPriority(), isAlive(), interrupt()
 
 

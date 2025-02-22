@@ -2,9 +2,9 @@ package com.hkesari.multithreading;
 
 //Thread safe means its value can be accessed by multiple threads at the same time without any problem. it is never cached.
 
-//Volatile vs synchronized                             --volatile is used with variables, sync is used with methods & blocks. volatile is nob-blocking , sync blocks. Hence, volatile has no deadlock or livelock problems
+//Volatile vs synchronized       volatile is used with variables, sync is used with methods & blocks. volatile is nob-blocking , sync blocks. Hence, volatile has no deadlock or livelock problems
 //volatile -                     no thread creates local copy. read and write operations on main memory only.
-////synchronized  -                 only one thread gets access to the block. thread get update of value from main memory and flush it to main after done with it before exit.
+//synchronized  -                 only one thread gets access to the block. thread get update of value from main memory and flush it to main after done with it before exit.
 //atomic                       - -similar to volatile but higher performance.
 // don't use synchronized and volatile together
 

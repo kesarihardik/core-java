@@ -28,7 +28,7 @@ public class WrapperClass {
 
 
         List<Integer> l1 = new ArrayList<>();
-         for(int z = 1; i<=50;z++){
+         for(int z = 1; z<=50;z++){
              // l1.add(integer.valuof(z));
              l1.add(z);                        //autoboxing
          }

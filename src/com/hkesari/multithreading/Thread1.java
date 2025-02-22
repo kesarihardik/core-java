@@ -3,7 +3,7 @@ package com.hkesari.multithreading;
 /*
 thread                -- single sequential flow of control in a program. basic unit of execution
 multithreading        -- executing 2 or more concurrent threads.
-What is  thread life cycle ?
+What is  thread life cycle ?             https://www.geeksforgeeks.org/lifecycle-and-states-of-a-thread-in-java/
 
 How to implement multithreading                  --extending Thread class and implementing Runnable interface.
                                                     override the run method in both ways and use start to execute thread.
@@ -32,7 +32,7 @@ class Hello extends Thread{
     }
 }
 public class Thread1 {
-    public static void main(String[] args){
+    public static void main(String[] args) throws InterruptedException {
         Hi o1 = new Hi();
         Hello o2 = new Hello();
 
@@ -44,5 +44,10 @@ public class Thread1 {
         catch(Exception ex){     }
         
         o2.start();
+
+
+        o1.join();
+        o2.join();
+
     }
 }

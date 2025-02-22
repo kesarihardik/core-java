@@ -25,7 +25,7 @@ public class ArrayClass {
 //            public int compare(double[] val1, double[] val2){
 //                return Double.compare(val2[1],val1[1]);
 //            }
-//        };
+//        };/
 //
 //        Arrays.sort(val,custom);
 //

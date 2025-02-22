@@ -18,7 +18,7 @@ exception types :  built in, user defined
 */
 
 
-public class ExceptionHandling1 {
+public class ExceptionHandling {
 
     public static void main(String[] args) {
 

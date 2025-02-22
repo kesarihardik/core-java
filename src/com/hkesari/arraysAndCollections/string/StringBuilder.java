@@ -6,7 +6,7 @@ package com.hkesari.arraysAndCollections.string;
 public class StringBuilder {
      public static void main(String[] args){
          StringBuffer sbu = new StringBuffer();
-         System.out.println(sbu.capacity());           //gives buffer of size 16
+         System.out.println(sbu.capacity());           //gives buffer of size 16 chars
 
          StringBuffer sb = new StringBuffer("abc");
          System.out.println(sb.capacity());
@@ -14,6 +14,12 @@ public class StringBuilder {
          java.lang.StringBuilder s = new java.lang.StringBuilder("John");
          s.append( " Wick");
          s.insert(0,"Mr ");
+
+//         s.charAt(1);
+//         s.setCharAt(9,'4');      //s.insert(8,'c')
+
+//         s.delete(0,4);
+//         s.deleteCharAt(5)
 
          System.out.println(s);
          System.out.println(s.indexOf("Wick"));

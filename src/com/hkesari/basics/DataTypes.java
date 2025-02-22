@@ -5,7 +5,7 @@ datatype -  defines type of variable.
 types -  primitive and non-primitive.
 
 primitive -  built/predefined into language.
-8 primitive  -   int, short, long, float, long, char, boolean, byte
+8 primitive  -   char, boolean, byte, short, int, long, float, double,
 
 non-primitive - reference types/ reference variables/ object references , user defined.
 4 non-primitive - string, array, class, interface

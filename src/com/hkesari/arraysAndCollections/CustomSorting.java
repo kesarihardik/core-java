@@ -30,8 +30,7 @@ public class CustomSorting {
 //        Collections.sort(list);
 
 
-        //using Comparator
-
+        //using Comparator interface. it's a functional interface
         Comparator<Employee> EmployeeCompare = new Comparator<Employee>() {
             @Override
             public int compare(Employee o1, Employee o2) {

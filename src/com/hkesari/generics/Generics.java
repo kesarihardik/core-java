@@ -1,7 +1,7 @@
 package com.hkesari.generics;
 
 /*
-Generics : parameterized types.
+Generics : useful when you want to parameterize types.
         - They allow class,interface and methods to work with different types rather than one specific type.
         - compile type safety
         - no casting required
@@ -24,7 +24,7 @@ class Printer<T>{
 }
 
 public class Generics {
-    static<T> void display(T element){                    //generic method
+    static <T> void  display(T element){                    //generic method
         System.out.println(element);
     }
 
@@ -35,7 +35,7 @@ public class Generics {
         Printer<String> P2 = new Printer<>("Kesari");
         display(P2.getObj());
 
-//        Printer<int> P3 = new Printer<>(232);                 //err
+//        Printer<int> P3 = new Printer<>(232);                 //err - no primitive type allowed in generics
 //        display(P3.getObj());
 
           Printer<Integer> P4 = new Printer<>(12);        //Integer is wrapper class.

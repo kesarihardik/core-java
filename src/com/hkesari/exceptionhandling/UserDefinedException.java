@@ -9,7 +9,7 @@ class InvalidAgeException extends Exception{
 }
 
 
-public class ExceptionHandling2 {
+public class UserDefinedException {
     private static void validate(int age) throws InvalidAgeException {
         if(age<18){
             throw new InvalidAgeException("You are not adult.");

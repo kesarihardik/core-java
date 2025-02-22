@@ -1,10 +1,15 @@
 package com.hkesari.oops;
 
-/*Inheritance                               -- is a relationship // extends
- What is never inherited?                 --constructors, static initializers, instance initializer since they don't belong to object.
- private field inherited?                    https://stackoverflow.com/questions/4716040/do-subclasses-inherit-private-fields
+/* Inheritance                               -- is a relationship // extends
+ types                                      --- single, multilevel, hierarchical, multiple, hybrid
+ What is never inherited?                   --constructors, static initializers, instance initializer since they don't belong to object.
+
+ private field/method inherited?                    https://stackoverflow.com/questions/4716040/do-subclasses-inherit-private-fields
+
+ static field/ method inherited?                     -- static field is shared with subclassed unless hidden due to field with same name in subclass.
+                                                     -- static methods are never inherited since they are associated with parent class.
+
  all classes except Object have at least one superclass - Object.
- types                          --- single, multilevel, hierarchical, multiple, hybrid
 */
 
 class Shape {
