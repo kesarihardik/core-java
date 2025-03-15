@@ -2,6 +2,10 @@ package com.hkesari.arraysAndCollections;
 import java.util.*;
 
 //How many ways to custom sort ?                                                  --using Comparators or Comparable interfaces.
+
+//Comparator vs Comparable interfaces?
+//https://stackoverflow.com/questions/1440134/when-should-a-class-be-comparable-and-or-comparator
+
 class Employee implements  Comparable<Employee>{
     public String name;
     double salary;

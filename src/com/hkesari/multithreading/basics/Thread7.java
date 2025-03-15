@@ -1,4 +1,4 @@
-package com.hkesari.multithreading;
+package com.hkesari.multithreading.basics;
 
 // daemon thread                           -- thread with the lowest priority. jvm doesn't wait for daemon thread unlike other threads. It stops its execution and shuts.
 

@@ -2,7 +2,7 @@ package com.hkesari.basics;
 
 /*
 datatype -  defines type of variable.
-types -  primitive and non-primitive.
+types -  primitive(in built) and non-primitive (user defined).
 
 primitive -  built/predefined into language.
 8 primitive  -   char, boolean, byte, short, int, long, float, double,

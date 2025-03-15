@@ -2,12 +2,9 @@ package com.hkesari.exceptionhandling;
     /*
 Exception :  unexpected/unwarranted error or event while runtime that disrupts the normal flow of program
 
-error vs exception
-        - both belong to throwable class in java.
-        - errors belong to Error class, exception belong to Exception class.
-        - errors are beyond the scope of program. They can't be recovered from. e.g - OutOfMemoryError
-        - we handle exception. errors are beyond application scope.
-        - errors are always of unchecked types. exceptions are of checked and unchecked types.
+error vs exception -  errors can't be recovered from. they are beyond program control.
+         - exceptions are anomalies/ unexpected events in execution which need to be handled gracefully.
+         - Error class, Exception class extends Throwable class.
 
 exception types :  built in, user defined
                   built in has 2 types

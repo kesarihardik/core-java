@@ -3,9 +3,11 @@ package com.hkesari.arraysAndCollections.string;
 /*
   Strings are stored in SCP(string constant pool) or String Intern Pool.
   SCP is part of java heap memory.
-  1. literals are reused by jvm. If not present, new literal is created else already existing is referenced.
+  1. literals are reused by jvm. If not present, new literal is created else already existing is referenced. Once no reference to literal is there, it's removed by GC.
   2. new  : forces creation of object outside scp regardless of whether string is in scp or not.
   3. intern() : returns reference of string literal in scp/ creates string in scp if not exist and then returns reference.
+
+  https://www.scaler.com/topics/why-string-is-immutable-in-java/
 */
 public class StringPool {
     public static void main(String[] args){
@@ -30,7 +32,7 @@ public class StringPool {
 
 
         //intern return ref of string in scp.
-        String obj3 = new String("Hello").intern();
+        String obj3 = obj1.intern();
         System.out.println(obj3 == literal1);
     }
 }

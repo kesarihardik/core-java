@@ -1,4 +1,4 @@
-package com.hkesari.multithreading;
+package com.hkesari.multithreading.basics;
 
 //Make main thread to wait for daemon thread
 public class Thread8 {

@@ -1,4 +1,4 @@
-package com.hkesari.multithreading;
+package com.hkesari.multithreading.basics;
 
 //class One implements Runnable{
 //    @Override

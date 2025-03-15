@@ -1,4 +1,4 @@
-package com.hkesari.multithreading;
+package com.hkesari.multithreading.basics;
 
 //Implement multithreading using thread runnable interface which is a functional interface.
 //methods in thread              -- Thread.getName(), Thread.setName(), setPriority(), getPriority(), isAlive(), interrupt()
@@ -43,7 +43,7 @@ public class Thread2 {
         System.out.println(t2.getPriority());
 
         t1.start();
-        try{Thread.sleep(10);}catch (Exception ex){};
+        try{Thread.sleep(10);}catch (Exception ignored){};
         t2.start();
 
 

@@ -1,4 +1,4 @@
-package com.hkesari.multithreading;
+package com.hkesari.multithreading.basics;
 
 /*
 thread                -- single sequential flow of control in a program. basic unit of execution
@@ -16,7 +16,7 @@ class Hi extends Thread{
         for(int i =0;i<5;i++){
             System.out.println("Hi");
             try{Thread.sleep(100);}
-            catch (Exception ex){};
+            catch (Exception ignored){};
         }
     }
 }
@@ -27,7 +27,7 @@ class Hello extends Thread{
         for(int i =0;i<5;i++){
             System.out.println("Hello");
             try{Thread.sleep(100);}
-            catch (Exception ex){};
+            catch (Exception ignored){};
         }
     }
 }
@@ -41,7 +41,7 @@ public class Thread1 {
         try{
             Thread.sleep(10);
         }
-        catch(Exception ex){     }
+        catch(Exception ignored){     }
         
         o2.start();
 

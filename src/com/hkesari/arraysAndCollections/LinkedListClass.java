@@ -2,8 +2,6 @@ package com.hkesari.arraysAndCollections;
 import java.util.*;
 
 //LinkedListClass is doubly linked list implementation.
-//linked list class contains offer, addFirst, addLast methods also.
-//Implement linked list and its iterator.
 public class LinkedListClass {
     public static void main(String[] args){
         LinkedList<Integer> ll = new LinkedList<>();

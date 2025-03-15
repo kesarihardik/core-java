@@ -1,13 +1,13 @@
 package com.hkesari.cloning;
 
 /*
-cloning - creating a copy. types - shallow, deep.
+cloning - creating a copy. types - shallow copy, deep copy.
    shallow : same object, diff reference. creates new reference and assigns same object to it.
    deep: creates separate object similar to original.
 */
 
 //cloneable interface - marker interface (interface with empty body). It helps jvm understand which object can call clone() method of Object class.
-//clone() method created a deep copy.
+//clone() method creates a deep copy.
 
 class Value implements Cloneable {
     int value;

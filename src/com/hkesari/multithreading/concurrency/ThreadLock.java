@@ -1,8 +1,9 @@
-package com.hkesari.multithreading;
+package com.hkesari.multithreading.concurrency;
 
 import java.util.concurrent.locks.Lock;
 import java.util.concurrent.locks.ReentrantLock;
 
+//Lock interface is used for mutual exclusion.
 class CounterClass{
     public int count = 0;
     private final Lock lock = new ReentrantLock();
@@ -52,9 +53,7 @@ public class ThreadLock {
         try{
             t1.join();
             t2.join();
-        }catch(Exception e){
-
-        }
+        }catch(Exception ignored){ }
 
         System.out.println(c.getCount());
     }

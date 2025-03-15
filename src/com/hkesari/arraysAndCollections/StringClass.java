@@ -2,7 +2,7 @@ package com.hkesari.arraysAndCollections;
 
 import java.lang.String;
 public class StringClass {
-    public static void main(String args[]){
+    public static void main(String[] args){
         String str = "I like freedom.";
         System.out.println(str.length());
         System.out.println(str.toLowerCase());
